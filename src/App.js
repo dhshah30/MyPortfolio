@@ -7,6 +7,11 @@ import Testimonials from  './components/Testimonials';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import resumeData from './resumeData';
+import ReactDOM from 'react-dom';
+
+
+
+
 class App extends Component {
   render() {
     return (
@@ -24,3 +29,4 @@ class App extends Component {
 }
 
 export default App;
+
