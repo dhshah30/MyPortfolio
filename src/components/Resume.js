@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 export default  class Resume extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
+      <div>
+      <Helmet>
+        <title>Dhruvi shah</title>
+      </Helmet>
       <section id="resume">
 
          <div className="row education">
@@ -94,6 +99,7 @@ export default  class Resume extends Component {
          </div>
 
       </section>
+      </div>
     );
   }
 }

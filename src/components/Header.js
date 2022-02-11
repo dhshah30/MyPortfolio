@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 export default class Header extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
+      <div>
+      <Helmet>
+        <title>Dhruvi shah</title>
+      </Helmet>
       <React.Fragment>
       
       <header id="home">
@@ -46,6 +51,7 @@ export default class Header extends Component {
 
       </header>
       </React.Fragment>
+      </div>
     );
   }
 }

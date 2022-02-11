@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 export default class Porfolio extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
+      <div>
+      <Helmet>
+        <title>Dhruvi shah</title>
+      </Helmet>
       <section id="portfolio">
       <div className="row">
         <div className="twelve columns collapsed">
@@ -35,6 +40,7 @@ export default class Porfolio extends Component {
         </div>
       </div>
   </section>
+  </div>
         );
   }
 }

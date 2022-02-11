@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 export default class Footer extends Component {
   render() {
+    
     let resumeData = this.props.resumeData;
     return (
+      <div>
+      <Helmet>
+        <title>Dhruvi shah</title>
+      </Helmet>
       <footer>
       <div className="row">
         <div className="twelve columns">
@@ -24,6 +30,7 @@ export default class Footer extends Component {
         <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open" /></a></div>
       </div>
     </footer>
+    </div>
     );
   }
 }

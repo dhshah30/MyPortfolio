@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 export default class Testimonials extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
+      <div>
+      <Helmet>
+        <title>Dhruvi shah</title>
+      </Helmet>
       <section id="testimonials">
         <div className="text-container">
           <div className="row">
@@ -32,6 +37,7 @@ export default class Testimonials extends Component {
           </div> {/* row ends */}
         </div>  {/* text-container ends */}
       </section>
+      </div>
         );
   }
 }
